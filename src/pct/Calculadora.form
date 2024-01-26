@@ -74,7 +74,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="btnCalcular" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="15" max="32767" attributes="0"/>
+                          <EmptySpace pref="22" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="lblResultado" max="32767" attributes="0"/>
                               <Component id="btnLimpar" max="32767" attributes="0"/>
@@ -210,8 +210,9 @@
                       <Component id="rbtSub" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="rbtMultiplicação" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="rbtDivisão" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -242,6 +243,9 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="rbtMultiplica&#xe7;&#xe3;o">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Multiplica&#xe7;&#xe3;o"/>
               </Properties>
               <Events>
@@ -250,6 +254,9 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="rbtDivis&#xe3;o">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="divis&#xe3;o"/>
               </Properties>
             </Component>

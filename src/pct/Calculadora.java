@@ -100,6 +100,7 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup1.add(rbtMultiplicação);
         rbtMultiplicação.setText("Multiplicação");
         rbtMultiplicação.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,6 +108,7 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup1.add(rbtDivisão);
         rbtDivisão.setText("divisão");
 
         javax.swing.GroupLayout pnlOpçõesLayout = new javax.swing.GroupLayout(pnlOpções);
@@ -130,8 +132,9 @@ public class Calculadora extends javax.swing.JFrame {
                 .addComponent(rbtSub)
                 .addGap(18, 18, 18)
                 .addComponent(rbtMultiplicação)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(rbtDivisão))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(rbtDivisão)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout pnlCalculadoraLayout = new javax.swing.GroupLayout(pnlCalculadora);
@@ -143,7 +146,7 @@ public class Calculadora extends javax.swing.JFrame {
                 .addGroup(pnlCalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlCalculadoraLayout.createSequentialGroup()
                         .addComponent(btnCalcular)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                         .addGroup(pnlCalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(lblResultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnLimpar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
