@@ -219,31 +219,25 @@ public class Calculadora extends javax.swing.JFrame {
         n2 = Integer.parseInt(txtNum2.getText());
         
         //processamento
-        
         if(rbtSoma.isSelected())
         
         {    
-        total = n1 + n2;
-        } 
+        total = n1 + n2;} 
         
-        if (rbtSub.isSelected())
+        if(rbtSub.isSelected())
         
         {
-            total = n1 - n2;
-        }
+            total = n1 - n2;}
         
-        if (rbtMultiplicação.isSelected()) 
+        if(rbtMultiplicação.isSelected()) 
         
-        { total = n1 * n2 ;
+        { total = n1 * n2 ;} 
         
+        else {
+            total = n1 / n2 ;}
         
-        } else {
-            total = n1 / n2 ;
-        }
-        
-//saída
-
-lblResultado.setText(String.valueOf(total));
+        //saída
+        lblResultado.setText(String.valueOf(total));
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
